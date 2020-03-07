@@ -1,0 +1,108 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto';
+	transition: all 0.8s;
+	height: 100vh;
+	background: linear-gradient(#fff, #4b89da);
+}
+header{
+	display: flex;
+}
+header a{
+	margin-left: 10%;
+}
+header a img{
+	width: 100px;
+	height: 90px;
+}
+section{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.conteinerLogin{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.conteinerLogin p{
+	justify-content: center;
+}
+p{
+	font-weight: 1px;
+	font-size: 30pt;
+	color: #4B89DA;
+	text-align: center;
+}
+form{
+	 display: flex;
+	 justify-content: center;
+	 flex-direction: column;
+}
+input{
+	height: 40px;
+	outline: none;
+	opacity: 1;
+	margin: 10px;
+}
+.campoDigitar{
+	width: 350px;
+	padding: 10px;
+	border-top: none;
+	border-bottom: solid 1px #4b89da;
+	border-left: none;
+	border-right:none;
+	font-size: 12pt;
+	transition: all 0.5s;
+	background-color: transparent;
+}
+.botaoSubmit{
+	width: 90px;
+	background-color: #4b89da;
+	border: 1px solid #4b89da; 
+	border-radius: 5px;
+	font-size: 14;
+	color: #fff;
+	margin: auto;
+	transition: all 0.5s;
+}
+.campoDigitar:hover{
+	background-color: #f4f6f9;
+	transition: all 0.5s;
+}
+.campoDigitar:focus{
+	background-color: #f4f6f9;
+	transition: all 0.5s;
+}
+.botaoSubmit:hover{
+	background-color: #fff;
+	color:#4b89da; 
+	transition: all 0.5s;
+}
+footer{
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+}
+footer div{
+	font-size: 14pt;
+	color: #424953;
+}
+/*Tela de Login de ADM*/
+@media(max-width:450px){
+	p{
+	font-size: 20pt;
+	}
+	input{
+	height:30px;
+	margin:5px;
+	}
+	.campoDigitar{
+	width: 200px;
+	}
+	.botaoSubmit{
+		margin-top: 20px;
+	}
+}
