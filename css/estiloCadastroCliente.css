@@ -4,7 +4,6 @@ body{
 	padding: 0;
 	font-family: 'Roboto';
 	transition: all 0.8s;
-	height: 100vh;
 	background: linear-gradient(#fff, #4b89da);
 }
 /*Cabeçalho*/
@@ -118,7 +117,7 @@ ul li{
 footer{
 	display: flex;
 	justify-content: center;
-	margin-top: 50px;
+	margin-top: 45px;
 }
 footer div{
 	font-size: 14pt;
