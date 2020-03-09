@@ -69,11 +69,11 @@ input{
 	transition: all 0.5s;
 }
 .campoDigitar:hover{
-	background-color: #f4f6f9;
+	background-color: #e5e8ec;
 	transition: all 0.5s;
 }
 .campoDigitar:focus{
-	background-color: #f4f6f9;
+	background-color: #e5e8ec;
 	transition: all 0.5s;
 }
 .botaoSubmit:hover{
