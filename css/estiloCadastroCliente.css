@@ -124,7 +124,7 @@ footer div{
 	font-size: 14pt;
 	color: #424953;
 }
-/*Estilo do comportamente responsivo de paginas de telas pequenas*/
+/*Estilo do comportamente responsivo de paginas de telas para tablet*/
 @media(max-width: 1210px){
 	.avisosFormulario{
 		width: 100%;
