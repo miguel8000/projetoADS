@@ -173,4 +173,8 @@ footer div{
 	ul li{
 		padding: 5px;
 	}
+	footer{
+		position: relative;
+		margin-top: 50px;
+	}
 }
