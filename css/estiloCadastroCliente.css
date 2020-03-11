@@ -33,7 +33,6 @@ section{
 }
 /*MENSAGENS DE ERROR E SECESSO*/
 .conteinerMensagemErrorSucesso{
-	display: flex;
 	width: 100%;
 	margin: auto;
 	height: 40px;
@@ -47,7 +46,7 @@ section{
 	box-sizing: border-box;
 }
 .iconMensagemErrorSucesso{
-	width: 40px;
+	
 	height: 40px;
 	text-align: center;
 	color: #eee;
