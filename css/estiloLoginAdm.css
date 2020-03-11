@@ -1,3 +1,4 @@
+/*Estilo golbal*/
 body{
 	margin: 0;
 	padding: 0;
@@ -6,6 +7,7 @@ body{
 	height: 100vh;
 	background: linear-gradient(#fff, #4b89da);
 }
+/*Cabeçalho da página*/
 header{
 	display: flex;
 }
@@ -16,6 +18,7 @@ header a img{
 	width: 100px;
 	height: 90px;
 }
+/*ESTILO DO CONTEINER*/
 section{
 	display: flex;
 	justify-content: center;
@@ -30,12 +33,39 @@ section{
 .conteinerLogin p{
 	justify-content: center;
 }
+/*E do titulo do conteiner*/
 p{
 	font-weight: 1px;
 	font-size: 30pt;
 	color: #4B89DA;
 	text-align: center;
 }
+/*Estilo da mensagem de Error */
+.errorLogin{
+	display: flex;
+	width: 350px;
+	height: 40px;
+	margin: auto;
+	background-color: rgb(198, 68, 68);
+	border-radius: 1px solid;
+}
+.closeError{
+	text-align: center;
+	color: #eee;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.closeX{
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	color: #eee;
+	padding: 10px;
+	box-sizing: border-box;
+	background-color: rgb(169, 13, 14);
+}
+
+/*Estilo globais dos Inputs */
 form{
 	 display: flex;
 	 justify-content: center;
@@ -68,6 +98,7 @@ input{
 	margin: auto;
 	transition: all 0.5s;
 }
+/*Comportamento da animação dos campos de texto*/
 .campoDigitar:hover{
 	background-color: #e5e8ec;
 	transition: all 0.5s;
@@ -76,11 +107,13 @@ input{
 	background-color: #e5e8ec;
 	transition: all 0.5s;
 }
+/*Animação do batão 'Entrar'*/
 .botaoSubmit:hover{
 	background-color: #fff;
 	color:#4b89da; 
 	transition: all 0.5s;
 }
+/*Rodapé*/
 footer{
 	display: flex;
 	justify-content: center;
@@ -90,17 +123,20 @@ footer div{
 	font-size: 14pt;
 	color: #424953;
 }
-/*Tela de Login de ADM*/
+/*Comportamento responsivo*/
 @media(max-width:450px){
 	p{
-	font-size: 20pt;
+		font-size: 20pt;
+	}
+	.errorLogin{
+		width: 200px;
 	}
 	input{
-	height:30px;
-	margin:5px;
+		height:30px;
+		margin:5px;
 	}
 	.campoDigitar{
-	width: 200px;
+		width: 200px;
 	}
 	.botaoSubmit{
 		margin-top: 20px;

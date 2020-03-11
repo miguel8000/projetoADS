@@ -1,4 +1,20 @@
-
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto';
+	transition: all 0.8s;
+	height: 100vh;
+}
+header{
+	display: flex;
+}
+header a{
+	margin-left: 10%;
+}
+header a img{
+	width: 100px;
+	height: 90px;
+}
 
 
 
