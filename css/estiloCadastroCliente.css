@@ -42,6 +42,7 @@ section{
 	border-radius: 1px solid;
 }
 .mensagemErrorSucesso{
+	width: 100%;
 	text-align: center;
 	color: #eee;
 	padding: 10px;
@@ -159,8 +160,12 @@ footer div{
 	font-size: 14pt;
 	color: #424953;
 }
-/*Estilo do comportamente responsivo de paginas de telas pequenas*/
+/*Estilo do comportamente responsivo de paginas de telas tablet*/
 @media(max-width: 1210px){
+	.divFormulario{
+		width: 100%;
+	}
+
 	.avisosFormulario{
 		width: 100%;
 	}
