@@ -5,6 +5,8 @@
 		<meta name="viewport" content="width=width-device, initial-scale=1, shrink-to-fit=no">
 		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/estiloLoginAdm.css">
+
+		<link rel="stylesheet" type="text/css" href="verifica_login.php">
 		<title>Login</title>
 	</head>
 	<body>
@@ -26,7 +28,7 @@
 					<div class="closeError">Erro!!!! Usuário ou Senha incorreto.</div>
 				</div>
 				<!--Fomulario -->
-				<form>
+				<form action="Login_ADM.php" method="POST">
 					<input class="campoDigitar" type="text" name="login" placeholder="Usuário" required="">
 					<input class="campoDigitar" type="password" name="senha" placeholder="Senha" required="">
 					<input class="botaoSubmit" type="submit" name="logar" value="Entrar">
