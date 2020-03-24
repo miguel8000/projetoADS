@@ -21,7 +21,7 @@ $query = "INSERT INTO cadastro_servico(cod_servico, modelo_servico, imei1_servic
 
 if($conexao->query($query) === TRUE) {
 	$_SESSION['status_cadastro'] = true;
-	header('Location: telaCadastroServico.html');
+	header('Location: ../FrontEnd/cadastro_servico.html');
 	exit;
 }
 
