@@ -17,15 +17,15 @@ $row = mysqli_fetch_assoc($result);
 
 if($row['total'] == 1) {
 	$_SESSION['usuario_existe'] = true;
-	header('Location: CadastroCliente.html');
+	header('Location: ../FrontEnd/cadastro_cliente.html');
 	exit;
 }
 
-$query = "INSERT INTO cliente(nickname_cliente, nome_cliente, sobrenome_cliente, fone1_cliente, fone2_cliente, email_cliente, senha_cliente) VALUES ('$nickname_cliente', '$nome_cliente', '$sobrenome_cliente', '$fone1_cliente', '$fone2_cliente', '$email_cliente', '$senha_cliente')";
+$query = "INSERT INTO cliente(nome_cliente, sobrenome_cliente, nickname_cliente, fone1_cliente, fone2_cliente, email_cliente, senha_cliente) VALUES ('$nome_cliente', '$sobrenome_cliente', '$nickname_cliente', '$fone1_cliente', '$fone2_cliente', '$email_cliente', '$senha_cliente')";
 
 if($conexao->query($query) === TRUE) {
 	$_SESSION['status_cadastro'] = true;
-	header('Location: CadastroCliente.html');
+	header('Location: ../FrontEnd/cadastro_cliente.html');
 	exit;
 }
 
