@@ -1,0 +1,109 @@
+/*Estilo global*/
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto';
+	display: flex;
+	box-sizing: border-box;
+}
+
+/*menu lateral*/
+#idInputCheckbox{
+	display: none;
+}
+#inconeToogle{
+	display:block:;
+	cursor:pointer;
+	padding: 15px;
+	position: absolute;
+	z-index: 1;
+}
+.barra{
+	width: 300px;
+	height: 100%;
+	background: linear-gradient(#4b89da, #fff);
+	position: absolute;
+	transition: all 0.2s linear;
+	left: -300px;
+}
+nav{
+	width: 100%;	
+	position: absolute;
+	top: 60px;
+}
+nav div img, span{
+	margin-left: 60px;
+}
+nav div span{
+	padding: 20px;
+	font-size: 18px;
+	color: #eee;
+}
+nav div{
+	margin-bottom: 10px;
+}
+nav a{
+	text-decoration: none;
+}
+.link{
+	padding: 20px;
+	font-size: 18px;
+	border-bottom: solid 1px #4b89da;
+	color: #eee;
+	transition: all 0.2s linear;
+}
+.link:hover{
+	background-color: #5e9cea;
+}
+#idInputCheckbox:checked ~ .barra{
+	transform: translateX(300px);
+}
+
+/*section com formulario*/
+section{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	overflow-x: auto;
+}
+/*Modal*/
+#bg{
+	margin-top: 200px;
+	top: -410;
+	position: fixed;
+	display: none;
+}
+#bg:target{
+	display: flex;
+}
+#bg:target ~.bg{
+	top: 600px;
+}
+.box{
+	display: flex;
+	position: absolute;
+	
+	border: 0.5px solid #000;
+	border-radius: 5px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.box div{
+	display: flex;
+	position: absolute;
+	padding: 20px;
+}
+#close{
+	color: #fff;
+	text-decoration: none;
+	font-size: 16pt;
+	position: absolute;
+	background-color: #4b89da;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	top: 0;
+	right: 0;
+	transition: all 0.2s linear;
+}

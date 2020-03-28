@@ -5,7 +5,7 @@ body{
 	font-family: 'Roboto';
 	transition: all 0.8s;
 	height: 100vh;
-	background: linear-gradient(#fff, #4b89da);
+	background: linear-gradient(to bottom right,#fff, #4b89da);
 }
 /*Cabeçalho da página*/
 header{

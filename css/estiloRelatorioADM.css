@@ -1,0 +1,80 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto';
+	transition: all 0.8s;
+	box-sizing: border-box;
+	background-color: #eee;
+}
+header{
+	display: flex;
+}
+nav{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background-color: #212121;
+	color: #eee;
+	box-sizing: border-box;
+}
+img{
+	width: 100px;
+	height: 90px;
+}	
+div ul{
+	list-style: none;
+}
+ul li{
+	margin: 10px;
+}
+a{
+	text-decoration: none;
+	color: #eee;	
+}
+.sectionBusca{
+	display: flex;
+	box-sizing: border-box;
+	background-color: #fff;
+}
+div form{
+	display: flex;
+	align-items: center;	
+	padding: 20px; 
+}
+input{
+	margin-left: 10px;
+	padding: 10px;
+	outline: none;
+}
+.inputText{
+	border: 1px solid #212121;
+	border-radius: 3px;
+}
+.inputBotao{
+	border: 1px solid #4b89da;
+	border-radius: 3px;
+	background-color: #4b89da;
+	color: #eee;
+}
+.tabelaSeviçCliente{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+.divTabelaServiço{
+	display: flex;
+	flex-direction: column;	
+	flex-wrap: wrap;
+	background-color: #fff;
+	flex-grow: 1;
+}
+.lista li{
+	display: inline-block;
+}
+
+
+
+
+
+
