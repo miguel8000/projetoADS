@@ -33,6 +33,11 @@ ul li{
 a{
 	text-decoration: none;
 	color: #eee;	
+	transition: all 0.3s;
+}
+a:hover{
+	color: #4B89DA;
+	transition: all 0.3s;
 }
 /*---------------------------------------------------------------------------*/
 section{
