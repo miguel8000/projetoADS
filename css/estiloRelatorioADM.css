@@ -43,7 +43,6 @@ a{
 }
 .conteinerFomulario{
 	display: flex;
-	justify-content: space-around;	
 	flex-wrap: wrap;
 }
 div form{
@@ -52,7 +51,6 @@ div form{
 	flex-wrap: wrap;	
 	padding: 20px; 
 }
-
 input{
 	margin-left: 10px;
 	padding: 10px;
@@ -68,12 +66,8 @@ input{
 	background-color: #4b89da;
 	color: #eee;
 }
-.divButtonImprimir{
-	display: flex;
-	align-items: center;	
-}
 button{
-	margin-left: 10px;
+	margin-top: 20px;
 	padding: 10px;
 	outline: none;
 	border: 1px solid #e8563f;
@@ -81,15 +75,23 @@ button{
 	background-color: #e8563f;
 	color: #eee;
 }
-@media (max-width: 413px) {
+@media (max-width: 444px) {
 		input{
 			padding: 7px;
 		}
 		.inputText{
-			width: 70%;
+			width: 80%;
 			margin-bottom: 10px;
 		}
 		button{
+			margin-top: 60px;
+			padding: 7px;
+		}
+}
+@media (max-width: 385px) {
+		button{
+			margin-top: 10px;
+			margin-left: 30px; 
 			padding: 7px;
 		}
 }
@@ -97,6 +99,7 @@ button{
 	display: flex;
 	width: 100%;
 	margin-top: 50px;
+	box-sizing: border-box;
 }
 .divTabelaServiço{
 	display: flex;
@@ -104,7 +107,7 @@ button{
 	width: 100%;
 }
 .table{
-	width: 80%;
+	width: 90%;
 	border-collapse: collapse;
 }
 .table td,.table th{
@@ -125,8 +128,7 @@ button{
 }
 
 /*responsive*/
-
-@media(max-width: 500px){
+@media(max-width: 665px){
 	.table thead{
 		display: none;
 	}

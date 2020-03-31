@@ -1,3 +1,6 @@
+*{
+	box-sizing: border-box;
+}
 body{
 	margin: 0;
 	padding: 0;
@@ -6,13 +9,8 @@ body{
 	box-sizing: border-box;
 	background-color: #eee;
 }
-*{
-	box-sizing: border-box;
-}
-
-header{
-	display: flex;
-}
+/*---------------------------------------------------------------------------*/
+/*Menu Estilo*/
 nav{
 	display: flex;
 	flex-direction: row;
@@ -36,55 +34,22 @@ a{
 	text-decoration: none;
 	color: #eee;	
 }
-.conteinerFomulario{
-	display: flex;
-	justify-content: space-around;	
-	flex-wrap: wrap;
-}
-div form{
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;	
-	padding: 20px; 
-}
-
-input{
-	margin-left: 10px;
-	padding: 10px;
-	outline: none;
-}
-.inputText{
-	border: 1px solid #212121;
-	border-radius: 3px;
-}
-.inputBotao{
-	border: 1px solid #4b89da;
-	border-radius: 3px;
-	background-color: #4b89da;
-	color: #eee;
-}
+/*---------------------------------------------------------------------------*/
 section{
 	display: flex;
-	justify-content: space-around;
+	justify-content:center;
 	flex-wrap: wrap;
 	box-sizing: border-box;
 }
-.divTabelaServiço{
-	display: flex;
-	flex-direction: column;
-	background-color: #eee;	
-}
-.divTabelaServiço form{
-	display: flex;
-	flex-direction: column;
-}
-.conteinerLogin{
+
+.conteiner{
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
 	background-color: #fff;
 	box-sizing: border-box;
 	border-radius: 5px;
+	margin: 20px;
 }
 .avisosFormulario{
 	color: #fff;
@@ -92,6 +57,18 @@ section{
 	box-sizing: border-box;
 	padding: 10px;
 }
+span{
+	font-weight: 1px;
+	font-size: 20pt;
+}
+p{
+	font-weight: 1px;
+	font-size: 16pt;
+}
+ul li{
+	padding: 5px;
+}
+
 /*MENSAGENS DE ERROR E SUCESSO*/
 .conteinerMensagemErrorSucesso{
 	width: 100%;
@@ -113,13 +90,32 @@ section{
 .errorCorMesnsagemX{
 	background-color: rgb(169, 13, 14);
 }
+.divTabelaServiço{
+	display: flex;
+	flex-direction: column;
+	background-color: #eee;	
+	margin: 20px;
+}
+/*---------------------------------------------------------------------------*/
 /*Formulario*/
+.divTabelaServiço form{
+	display: flex;
+	flex-direction: column;
+}
+div form{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;	
+	padding: 20px; 
+}
+
 input{
-	height: 40px;
+	margin-left: 10px;
+	padding: 10px;
 	outline: none;
-	opacity: 1;
 	margin: 10px;
 }
+
 /*Estilo e comportamente dos inputs text Menores*/
 .inputtextMenor{
 	width: 350px;
@@ -144,6 +140,7 @@ textarea{
 	width: 350px;
 	height: 150px;
 }
+
 /*Estilo e comportamente do input botão submit*/
 .botaoSubmit{
 	width: 90px;
@@ -154,44 +151,37 @@ textarea{
 	color: #fff;
 	transition: all 0.5s;
 }
+
 /*Estilo da area de aviso*/
 .botaoSubmit:hover{
 	background-color: #fff;
 	color:#4b89da; 
 	transition: all 0.5s;
 }
-
-.avisosFormulario{
-	color: #fff;
-	background-color: #4B89DA;
-	box-sizing: border-box;
-	padding: 10px;
-}
-span{
-	font-weight: 1px;
-	font-size: 20pt;
-}
-p{
-	font-weight: 1px;
-	font-size: 16pt;
-}
-ul li{
-	padding: 5px;
-}
+/*---------------------------------------------------------------------------*/
+/*Estilo do comportamente responsivo da pagina-tablet*/
 @media(max-width: 1210px){
+	.conteinerLogin{
+		width: 100%;
+	}
 	.avisosFormulario{
 		width: 100%;
 		box-sizing: border-box;
 	}
-	.inputtextoMaior{
-		width: 300px;
-		padding: 5px;
-		font-size: 10pt;
+	.divTabelaServiço{
+		width: 69%;
+		flex-direction: column;
+		background-color: #eee;	
 	}
 	.inputtextMenor{
-		width: 200px;
+		width: 500px;
 		padding: 5px;
 		font-size: 10pt; 
+	}
+	textarea{
+		width: 500px;
+		padding: 5px;
+		font-size: 10pt;
 	}
 	span{
 		font-weight: 1px;
@@ -205,6 +195,7 @@ ul li{
 		padding: 5px;
 	}
 }
+/*---------------------------------------------------------------------------*/
 /*Estilo do comportamente responsivo da pagina-mobile*/
 @media(max-width: 400px){
 	.divTabelaServiço{
