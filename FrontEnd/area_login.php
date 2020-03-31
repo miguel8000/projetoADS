@@ -22,10 +22,17 @@
 					Faça o login
 				</p>
 				<!--Mensagem de ERROR -->
+				<?php
+                    if(isset($_SESSION['nao_autenticado'])):
+                ?>
 				<div class="errorLogin">
 					<div class="closeX">X</div>
 					<div class="closeError">Erro!!!! Usuário ou Senha incorreto.</div>
 				</div>
+				<?php
+                    endif;
+                    unset($_SESSION['nao_autenticado']);
+                ?>
 				<!--Fomulario -->
 				<form action="../BackEnd/login.php" method="POST">
 					<input class="campoDigitar" type="text" name="login" placeholder="Usuário" required="">

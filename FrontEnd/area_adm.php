@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=width-device, initial-scale=1, shrink-to-fit=no">
 		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="../css/estiloAdmArea.css">
+		<link rel="stylesheet" type="text/css" href="../css/estiloRelatorioADM.css">
 		<title>ADM</title>
 	</head>
 <body>
@@ -22,27 +23,34 @@
 		</nav>
 	</div>
 	<section>
-		<div>
-			<span>
-				
-			</span>
+<head>
+		<nav>
+			<div>
+				<img src="../img/gatLogo.png">
+			</div>
+			<div class="lista">
+				<ul>
+					<li>ADMIN</li>
+					<li>
+						<a href="../BackEnd/logout.php">Sair	</a>
+					</li>	
+				</ul>
+			</div>
+		</nav>
+	<section class="sectionBusca">
+		<div class="conteinerFomulario">
+			<form>
+				<input class="inputText" type="text" name="consulta" placeholder="Consulte Serviço" required="">
+				<input class="inputBotao" type="submit" name="pesquisar" value="Consultar">
+				<button>Imprimir</button>
+			</form>
 		</div>
-		<div>
-			<table>
-				<thead>
-					<th>Nº id</th>
-					<th>Nome </th>
-					<th>1º IMEI</th>
-					<th>2º IMEI</th>
-					<th>Cor</th>
-					<th>Modelo</th>
-					<th>Status</th>
-				</thead>
-				<tbody>
-					
-				</tbody>
-			</table>
-		</div>
+	</section>	
+	
+	
+	</section>
+
+	</head>
 	</section>
 </body>
 </html>
