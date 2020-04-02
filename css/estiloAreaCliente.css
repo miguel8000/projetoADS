@@ -1,7 +1,7 @@
 *{
 	box-sizing: border-box;
 }
-body{
+.body{
 	margin: 0;
 	padding: 0;
 	font-family: 'Roboto';
@@ -11,7 +11,7 @@ body{
 }
 /*---------------------------------------------------------------------------*/
 /*Menu Estilo*/
-nav{
+.nav{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -30,17 +30,18 @@ div ul{
 ul li{
 	margin: 10px;
 }
-a{
+li a{
 	text-decoration: none;
 	color: #eee;	
 	transition: all 0.3s;
+	cursor: pointer;
 }
 a:hover{
 	color: #4B89DA;
 	transition: all 0.3s;
 }
 /*---------------------------------------------------------------------------*/
-section{
+.section{
 	display: flex;
 	justify-content:center;
 	flex-wrap: wrap;
@@ -73,7 +74,6 @@ p{
 ul li{
 	padding: 5px;
 }
-
 /*MENSAGENS DE ERROR E SUCESSO*/
 .conteinerMensagemErrorSucesso{
 	width: 100%;
@@ -103,18 +103,14 @@ ul li{
 }
 /*---------------------------------------------------------------------------*/
 /*Formulario*/
-.divTabelaServiço form{
-	display: flex;
-	flex-direction: column;
-}
-div form{
+form{
 	display: flex;
 	align-items: center;
+	flex-direction: column;
 	flex-wrap: wrap;	
 	padding: 20px; 
 }
-
-input{
+.input{
 	margin-left: 10px;
 	padding: 10px;
 	outline: none;
@@ -179,12 +175,12 @@ textarea{
 		background-color: #eee;	
 	}
 	.inputtextMenor{
-		width: 500px;
+		width: 100%;
 		padding: 5px;
 		font-size: 10pt; 
 	}
 	textarea{
-		width: 500px;
+		width: 100%;
 		padding: 5px;
 		font-size: 10pt;
 	}
@@ -200,6 +196,19 @@ textarea{
 		padding: 5px;
 	}
 }
+@media(max-width: 615px){
+	.inputtextMenor{
+		width: 100%;
+		padding: 5px;
+		font-size: 10pt; 
+	}
+	
+	textarea{
+		width: 100%;
+		padding: 5px;
+		font-size: 10pt;
+	}
+}
 /*---------------------------------------------------------------------------*/
 /*Estilo do comportamente responsivo da pagina-mobile*/
 @media(max-width: 400px){
@@ -211,7 +220,7 @@ textarea{
 		box-sizing: border-box;
 	}
 	.inputtextMenor{
-		width: 200px;
+		width: 100%;
 		padding: 5px;
 		font-size: 10pt; 
 	}

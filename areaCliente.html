@@ -5,12 +5,13 @@
 		<meta name="viewport" content="width=width-device, initial-scale=1, shrink-to-fit=no">
 		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/estiloAreaCliente.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<title>Area Cliente</title>
 	</head>
-	<body>
+	<body class="body">
 		<!-- -----------------------Inicio cabeçalho------------------------ -->
-		<header>
-			<nav>
+		<header >
+			<nav class="nav">
 				<div>
 					<img src="img/gatLogo.png">
 				</div>
@@ -19,10 +20,10 @@
 					<ul>
 						<li>Usuário</li>
 						<li>
-							<a href="">Meus Serviços</a>
+							<a href="#" data-toggle="modal" data-target="#ModalLongoExemplo">Meus Serviços</a>
 						</li>
 						<li>
-							<a href="">Sair</a>
+							<a href="#">Sair</a>
 						</li>	
 					</ul>
 				</div>
@@ -30,14 +31,12 @@
 		</header>
 		<!-- ------------------------------------------------------------- -->
 		<!-- -----------------------Inicio Conteúdo----------------------- -->	
-		<section>
+		<section class="section">
 			<div class="conteiner">
 				<!-- ---------------inicio da div com os avisos---------------- -->
-				
 				<div class="avisosFormulario">
 					<span>Seja bem-vindo</span>
 					<p>
-						
 						<ul>
 						    - Em caso de não saber acessar o IMEI de seu SmartPhone.<br>
 							 Atente-se as especificação a seguir:
@@ -70,21 +69,43 @@
 				</div>
 				<!-- --------------------------------------------------------- -->			
 				<form>
-					<input class="inputtextMenor" type="text" name="modelo" placeholder="Modelo" required="">
+					<input class="input inputtextMenor" type="text" name="modelo" placeholder="Modelo" required="">
 					<!-- ------------Input com os numeros de IMEI--- -->
-					<input class="inputtextMenor" type="text" name="IMEI1" placeholder="IMEI 1" required="">
-					<input class="inputtextMenor" type="text" name="IMEI2" placeholder="IMEI 2" required=""><br>
+					<input class="input inputtextMenor" type="text" name="IMEI1" placeholder="IMEI 1" required="">
+					<input class="input inputtextMenor" type="text" name="IMEI2" placeholder="IMEI 2" required=""><br>
 					<!-- ------------Input com o Cor---------------- -->
-					<input class="inputtextMenor" type="text" name="cor" placeholder="Cor" required=""><br>
+					<input class="input inputtextMenor" type="text" name="cor" placeholder="Cor" required=""><br>
 					<!-- ------------Area de Descrição-------------- -->	
 					<textarea placeholder="Descrição do Defeito"></textarea>
 					<!-- ------------Input com a Botão-------------- -->
-					<input class="botaoSubmit" type="submit" name="logar" value="Concluir">
+					<input class="input botaoSubmit" type="submit" name="logar" value="Concluir">
 				</form>
 			</div>
 		</section>
+		<section>
+			<!-- Inicio Modal -->
+			<div class="modal fade" id="ModalLongoExemplo" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="TituloModalLongoExemplo">Título do modal</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        ...
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<!--Fim Modal -->
+		</section>
 		<!-- -----------------------Fim Conteúdo----------------------- -->
-		<!-- -----Script de Icones de ERROr e Sucesso----- -->
+		<!-- -----------------------Script Bootstrap------------------- -->
 		<script src="https://kit.fontawesome.com/c4cf45b7a7.js" crossorigin="anonymous"></script>
+		<!-- -----Script de Icones de ERROr e Sucesso----- -->
+		<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
 	</body>
 </html>
