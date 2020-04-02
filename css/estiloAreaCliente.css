@@ -111,15 +111,14 @@ form{
 	padding: 20px; 
 }
 .input{
-	margin-left: 10px;
 	padding: 10px;
 	outline: none;
-	margin: 10px;
+	
 }
 
 /*Estilo e comportamente dos inputs text Menores*/
 .inputtextMenor{
-	width: 350px;
+	width: 100%;
 	padding: 10px;
 	border-top: none;
 	border-bottom: solid 1px #4b89da;
@@ -234,10 +233,6 @@ textarea{
 	}
 	ul li{
 		padding: 5px;
-	}
-	footer{
-		position: relative;
-		margin-top: 50px;
 	}
 	textarea{
 		width: 100%;
