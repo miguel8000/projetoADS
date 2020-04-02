@@ -160,10 +160,6 @@ textarea{
 }
 /*---------------------------------------------------------------------------*/
 /*-- Modal + Tabela --*/
-.modalFlex{
-	display: flex;
-	box-sizing: border-box;
-}
 .modalMeusServicos{
 	background-color: #4b89da;
 	color: #eee;
