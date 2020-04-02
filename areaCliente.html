@@ -19,8 +19,8 @@
 				<div class="lista">
 					<ul>
 						<li>Usuário</li>
-						<li>
-							<a href="#" data-toggle="modal" data-target="#ModalLongoExemplo">Meus Serviços</a>
+						<li><!-- Link para abrir o modal -->
+							<a href="#" data-toggle="modal" data-target=".bd-example-modal-xl">Meus Serviços</a>
 						</li>
 						<li>
 							<a href="#">Sair</a>
@@ -82,20 +82,46 @@
 				</form>
 			</div>
 		</section>
-		<section>
 			<!-- Inicio Modal -->
-			<div class="modal fade" id="ModalLongoExemplo" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
-			  <div class="modal-dialog" role="document">
+			<div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+			  <div class="modal-dialog modal-xl">
 			    <div class="modal-content">
-			      <div class="modal-header">
-			        <h5 class="modal-title" id="TituloModalLongoExemplo">Título do modal</h5>
+			      	<!-- Inicio do cabeçalho Modal -->
+			      <div class="modalMeusServicos modal-header">
+			        <h5 class="modal-title" id="TituloModalLongoExemplo">Meus Serviços</h5>
 			        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
 			          <span aria-hidden="true">&times;</span>
 			        </button>
 			      </div>
+			      <!-- Fim do cabeçalho Modal -->
+			      <!-- Inicio do corpo0 Modal -->
 			      <div class="modal-body">
-			        ...
+			        <section class="tabelaSeviçClienteModal">
+					    <div class="divTabelaServiçoModal">
+							<table class="table">
+							    <thead>
+							     	<th>Cod.</th>
+							     	<th>IMEI 1</th>
+							     	<th>IMEI 2</th>
+							     	<th>Modelo</th>
+							     	<th>Cor</th>
+							     	<th>Data</th>
+							     	<th>Status</th>
+							    </thead>
+							    <tbody>
+							      <tr>
+							     	<td data-label="Cod">2</td>
+							     	<td data-label="IMEI">468756186</td>
+							     	<td data-label="IMEI">468756186</td>
+							     	<td data-label="Modelo">A10S</td>
+							     	<td data-label="Cor">Preto</td>
+							     	<td data-label="Data">10/20/2003</td>
+							     	<td data-label="Status">Em Andamento</td>
+							    </tbody>
+							</table>
+						</div>
 			      </div>
+			      <!-- Fim do corpo Modal -->
 			    </div>
 			  </div>
 			</div>
