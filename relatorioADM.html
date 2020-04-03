@@ -5,19 +5,26 @@
 		<meta name="viewport" content="width=width-device, initial-scale=1, shrink-to-fit=no">
 		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/estiloRelatorioADM.css">
-		<title>Relatorio ADM</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<title>Relatorio Serviços</title>
 	</head>
-	<body>
+	<body class="body">
 		<header>
-			<nav>
-				<div>
+			<nav class="nav">
+				<div class="imagem">
 					<img src="img/gatLogo.png">
 				</div>
 				<div class="lista">
 					<ul>
-						<li>ADMINISTRADOR</li>
+						<li class="adm">ADMINISTRADOR</li>
 						<li>
-							<a href="">Sair	</a>
+							<a href="relatorioADM.html">Serviços</a>
+						</li>
+						<li>
+							<a href="relatorioADMCliente.html">Clientes</a>
+						</li>
+						<li>
+							<a href="">Sair</a>
 						</li>	
 					</ul>
 				</div>
@@ -26,11 +33,14 @@
 		<section class="sectionBusca">
 			<div class="conteinerFomulario">
 				<form>
-					<input class="inputText" type="text" name="consulta" placeholder="Consulte Serviço" required="">
-					<input class="inputBotao" type="submit" name="pesquisar" value="Consultar">
+					<input class="input inputText" type="text" name="data" placeholder="Data"><br>
+					<input class="input inputText" type="text" name="Modelo" placeholder="Modelo"><br>
+					<input class="input inputText" type="text" name="Cor" placeholder="Cor"><br>
+					<input class="input inputText" type="text" name="Status" placeholder="Status"><br>
+					<input class="input inputBotao" type="submit" name="pesquisar" value="Consultar">
 				</form>
 				<div class="divButtonImprimir">
-					<button>Imprimir</button>
+					<button class="button">Imprimir</button>
 				</div>	
 			</div>
 		</section>	
@@ -56,17 +66,39 @@
 				     	  	<td data-label="Cor">Preto</td>
 				     	  	<td data-label="Data">10/20/2003</td>
 				     	  	<td data-label="Staus">
-				     	  	  	<select id="Status">
-								  <option value="Pendente">Pendente</option>
-								  <option value="EmAndamento">Em Andamento</option>
-								  <option value="Finalizado">Finalizado</option>
-								</select>
+				     	  		<select>
+				     	  			<option>Pendente</option>
+				     	  			<option>Em Andamento</option>
+				     	  			<option>Finalizado</option>
+				     	  		</select>
 				     	  	</td>
-				            <td data-label="Descrição"><button>Clique Aqui</button></td>
+				            <td data-label="Descrição"><button class="buttonDescrição" data-toggle="modal" data-target=".bd-example-modal-xl">Mais Infomações</button></td>
 				        </tr>
 				    </tbody>
 				</table>
 			</div>
 		</section>
+		<!-- Inicio Modal -->
+		<div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-xl">
+			    <div class="modal-content">
+				      	<!-- Inicio do cabeçalho Modal -->
+				      <div class="modalInformacoaCliente modal-header">
+				        <h5 class="modal-title" id="TituloModalLongoExemplo">Descrição do Serviço</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <!-- Fim do cabeçalho Modal -->
+				      <!-- Inicio do corpo0 Modal -->
+				      <div class="modal-body">
+							
+			       <!-- Fim do corpo Modal -->
+			    </div>
+			</div>
+		</div>
+			       <!--Fim Modal -->
+		<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
 	</body>
 </html>

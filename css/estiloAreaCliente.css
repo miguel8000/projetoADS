@@ -57,6 +57,7 @@ a:hover{
 	border-radius: 5px;
 	margin: 20px;
 }
+/*Estilo da area de aviso*/
 .avisosFormulario{
 	color: #fff;
 	background-color: #4B89DA;
@@ -116,7 +117,7 @@ form{
 	
 }
 
-/*Estilo e comportamente dos inputs text Menores*/
+/*Estilo e comportamente dos inputs de text*/
 .inputtextMenor{
 	width: 100%;
 	padding: 10px;
@@ -151,8 +152,6 @@ textarea{
 	color: #fff;
 	transition: all 0.5s;
 }
-
-/*Estilo da area de aviso*/
 .botaoSubmit:hover{
 	background-color: #fff;
 	color:#4b89da; 
@@ -164,17 +163,6 @@ textarea{
 	background-color: #4b89da;
 	color: #eee;
 }
-.tabelaSeviçClienteModal{
-	display: flex;
-	width: 100%;
-	margin-top: 50px;
-	box-sizing: border-box;
-}
-.divTabelaServiçoModal{
-	display: flex;
-	justify-content: center;
-	width: 100%;
-}Z
 .table{
 	width: auto;
 	border-collapse: collapse;

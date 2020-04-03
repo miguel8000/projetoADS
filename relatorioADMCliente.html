@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=width-device, initial-scale=1, shrink-to-fit=no">
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/estiloRelatorioADMCliente.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<title>Relatorio Clientes</title>
+	</head>
+	<body class="body">
+		<header>
+			<nav class="nav">
+				<div class="imagem">
+					<img src="img/gatLogo.png">
+				</div>
+				<div class="lista">
+					<ul>
+						<li class="adm">ADMINISTRADOR</li>
+						<li>
+							<a href="relatorioADM.html">Serviços</a>
+						</li>
+						<li>
+							<a href="relatorioADMCliente.html">Clientes</a>
+						</li>
+						<li>
+							<a href="">Sair</a>
+						</li>	
+					</ul>
+				</div>
+			</nav>
+		</header>	
+		<section class="sectionBusca">
+			<div class="conteinerFomulario">
+				<form>
+					<input class="input inputText" type="text" name="Nome" placeholder="Nome"><br>
+					<input class="input inputBotao" type="submit" name="pesquisar" value="Consultar">
+				</form>
+				<div class="divButtonImprimir">
+					<button class="button">Imprimir</button>
+				</div>	
+			</div>
+		</section>	
+		<section class="tabelaSeviçCliente">
+			<div class="divTabelaServiço">
+				<table class="table">
+				    <thead>
+				     	<th>Usuário</th>
+				     	<th>Nome</th>
+				     	<th>WhatsApp</th>
+				     	<th>Telefone 2</th>
+				     	<th>E-mail</th>
+				    </thead>
+				    <tbody>
+				     	<tr>
+				     	  	<td data-label="Usuario">miguel9000</td>
+				     	    <td data-label="Nome">Miguel Barbosa da Silva Neto</td>
+				     	    <td data-label="WhatsApp">f5761561563</td>
+				     	    <td data-label="Telefone_2">k5761561545</td>
+				     	  	<td data-label="E-mail">miguelgçkldfgk@gmail.com </td>
+				        </tr>
+				    </tbody>
+				</table>
+			</div>
+		</section>
+		<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
