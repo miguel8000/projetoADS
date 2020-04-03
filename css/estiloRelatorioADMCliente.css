@@ -1,0 +1,206 @@
+*{
+	box-sizing: border-box;
+}
+.body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto';
+	transition: all 0.8s;
+	box-sizing: border-box;
+	background-color: #eee;
+}
+/*---------------------------------------------------------------------------*/
+/*Menu Estilo*/
+.nav{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	background-color: #212121;
+	color: #eee;
+	box-sizing: border-box;
+}
+.imagem{
+	margin-left: 5%;
+}
+img{
+	width: 100px;
+	height: 90px;
+}
+.lista{
+	margin-right: 5%;
+}	
+.lista ul{
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+}
+ul li{
+	margin: 10px;
+}
+.adm{
+	width: 100%;
+}
+li a{
+	text-decoration: none;
+	color: #eee;	
+	transition: all 0.3s;
+}
+a:hover{
+	color: #4B89DA;
+	transition: all 0.3s;
+}
+/*---------------------------------------------------------------------------*/
+.sectionBusca{
+	display: flex;
+	box-sizing: border-box;
+	background-color: #fff;
+}
+.conteinerFomulario{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+/*---------------------------------------------------------------------------*/
+/*Formulario*/
+.divButtonImprimir{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;	
+	padding: 15px;
+}
+div form{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;	
+	padding: 10px; 
+}
+/*Estilo e comportamente dos inputs de text*/
+.input{
+	margin: 5px;
+	padding: 5px;
+	outline: none;
+}
+.inputText{
+	border: 1px solid #212121;
+	border-radius: 3px;
+}
+/*Estilo e comportamente do input botão submit*/
+.inputBotao{
+	border: 1px solid #4b89da;
+	border-radius: 3px;
+	background-color: #4b89da;
+	color: #eee;
+	transition: all 0.5s;
+}
+.inputBotao:hover{
+	border: 1px solid #e8563f;
+	background-color: #e8563f;
+	transition: all 0.5s;
+}
+/*Estilo e comportamente dos outros botões*/
+.button,
+.buttonDescrição{
+	padding: 5px;
+	outline: none;
+	border: 1px solid #e8563f;
+	border-radius: 3px;
+	background-color: #e8563f;
+	color: #eee;
+	transition: all 0.5s;
+}
+.button:hover,
+.buttonDescrição:hover{
+	border: 1px solid #4b89da;
+	background-color: #4b89da;
+	transition: all 0.5s;
+}
+/*---------------------------------------------------------------------------*/
+/*-- Responsidade dos inputs + Baotões --*/
+@media (max-width: 444px) {
+		.input{
+			padding: 7px;
+			font-size: 10pt;
+		}
+		.inputText{
+			width: 80%;
+		
+		}
+		.button,
+		.buttonDescrição{
+			padding: 7px;
+			font-size: 10pt; 
+		}
+}
+
+/*---------------------------------------------------------------------------*/
+/*--Estilo do Modal e das Tabelas --*/
+.modalInformacoaCliente{
+	background-color: #4b89da;
+	color: #eee;
+}
+.tabelaSeviçCliente{
+	display: flex;
+	width: 100%;
+	margin-top: 50px;
+	box-sizing: border-box;
+}
+.divTabelaServiço{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+.table{
+	width: 100%;
+	border-collapse: collapse;
+}
+.table td,.table th{
+  padding:12px 15px;
+  border:1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  font-size:16px;
+}
+.table th{
+	background-color: #212121;
+	color:#eee;
+}
+
+.table tbody tr:nth-child(even){
+	background-color: #f5f5f5;
+}
+/*---------------------------------------------------------------------------*/
+/*-- Responsidade das tabelas --*/
+@media(max-width: 1000px){
+	.table thead{
+		display: none;
+	}
+
+	.table, .table tbody, .table tr, .table td{
+		display: block;
+		width: 100%;
+	}
+	.table tr{
+		margin-bottom:15px;
+	}
+	.table td{
+		text-align: right;
+		padding-left: 50%;
+		text-align: right;
+		position: relative;
+	}
+	.table td::before{
+		content: attr(data-label);
+		position: absolute;
+		left:0;
+		width: 50%;
+		padding-left:15px;
+		font-size:15px;
+		font-weight: bold;
+		text-align: left;
+	}
+}
+
+
+
+
