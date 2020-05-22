@@ -49,12 +49,11 @@
 			         <th>Descrição</th>
 			     </thead>
 
-			     <?php 
+			   <?php 
 					$sql = "SELECT s.cod_servico, s.modelo_servico, s.imei1_servico, s.imei2_servico, s.cor_servico, s.defeito_servico, s.statos_servico, s.data_time_servico, c.nome_cliente, c.sobrenome_cliente, c.fone1_cliente, c.fone2_cliente, c.email_cliente FROM servico s, cliente c WHERE s.id_cliente = c.id_cliente";
 					$stmt = mysqli_query($conexao, $sql);
 		    		while ($row = mysqli_fetch_array($stmt)){
-    			?>
-
+    			?> 
 			     <tbody>
 			     	  <tr>
 			     	  	  <td data-label="Cod"><?php echo $row['cod_servico'];?></td>
